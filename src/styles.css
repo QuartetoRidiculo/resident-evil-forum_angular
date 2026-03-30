@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-main: #050505;
+  --bg-secondary: #0B1A14;
+  --card: #1A1A1A;
+
+  --accent: #C1121F;
+  --accent-hover: #FF2A2A;
+  --accent-toxic: #2A7A4B;
+
+  --text-main: #F5F5F5;
+  --text-muted: #7A7A7A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
