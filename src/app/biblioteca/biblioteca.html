@@ -1,1 +1,15 @@
-<p>biblioteca works!</p>
+<div>
+    @for (jogo of jogos; track jogo.nomeJogo) {
+        <div class="card">
+            <img [src]="jogo.imagemThumb" alt="{{ jogo.nomeJogo }}">
+            <div>
+                <div>
+                    <h2>{{ jogo.nomeJogo }}</h2>
+                    <p>Ano de lançamento: {{ jogo.ano }}</p>
+                </div>
+                <span>{{ jogo.notaMetacritic }}</span>
+            </div>
+            <p>{{ jogo.miniSinopse }}</p>
+        </div>
+    }
+</div>
