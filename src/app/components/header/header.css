@@ -1,0 +1,32 @@
+header {
+  padding: 16px 0;
+  background-color: var(--bg-main);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+
+ul li a {
+    padding: 4px;
+  color: var(--text-muted);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: var(--accent);
+  background-color: #c1121e5e;
+  border-radius: 4px;
+}
+
+img {
+  width: 150px;
+}
