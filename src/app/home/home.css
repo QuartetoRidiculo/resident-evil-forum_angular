@@ -1,0 +1,112 @@
+.saga {
+
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 20px;
+  background-color: #0F1412;
+  color: var(--accent);
+  border-radius: 15px;
+  margin: auto;
+
+
+
+}
+
+.h {
+  padding: 20px;
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--text-main);
+  margin: auto;
+  font-weight: 900;
+}
+
+.h11 {
+  display: flex;
+  justify-content: center;
+  color: var(--accent);
+  margin: auto;
+  font-weight: 900;
+}
+
+.txt {
+  text-align: center;
+  width: 550px;
+  color: var(--text-main);
+  margin: auto;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.button {
+  background-color: var(--accent);
+  border-radius: 16px;
+  color: var(--text-main);
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.5s;
+  border: none;
+  padding: 16px;
+}
+
+.button:hover {
+  background-color: var(--accent-hover);
+  cursor: pointer;
+}
+
+.Destaques {
+  color: var(--accent);
+  padding-left: 30px;
+  font-weight: bolder;
+}
+
+.iconicos {
+  color: var(--text-main);
+  padding-left: 30px;
+  font-weight: bolder;
+}
+
+.posts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+
+}
+
+.card {
+  background-color: var(--card);
+  width: 350px;
+  height: 200px;
+  border-radius: 16px;
+}
+
+.cardtxt {
+  padding: 10px;
+  color: var(--text-main);
+}
+
+.cardtxt p {
+  font-size: 13px;
+}
+
+img {
+  width: 350px;
+  border-radius: 16px 16px 0px 0px;
+}
