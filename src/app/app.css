@@ -1,5 +1,5 @@
 .bg{
     background-image: url('/assets/images/paper.jpg');
     background-size: cover;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 68.5px);
 }
