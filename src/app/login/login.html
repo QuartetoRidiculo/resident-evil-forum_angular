@@ -1,0 +1,27 @@
+<div class="container">
+
+  <div class="lamp" [class.on]="ligada">
+
+    <div class="top"></div>
+    <div class="torre"></div>
+    <div class="base"></div>
+
+    <div class="cord"
+         #corda
+         (mousedown)="iniciarPuxao($event, corda)"
+         (touchstart)="iniciarPuxao($event, corda)">
+      <div class="pull"></div>
+    </div>
+
+  </div>
+
+  <h2>{{ nick && nick.trim() !== '' ? 'Puxe a corda' : 'Qual seu nick?' }}</h2>
+
+  <input 
+    class="input"
+    type="text"
+    [(ngModel)]="nick"
+    [placeholder]="nick && nick.trim() !== '' ? 'Pronto! Agora puxe a corda!' : 'Digite seu nick'"
+  />
+
+</div>

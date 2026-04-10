@@ -1,0 +1,82 @@
+.container {
+    height: 100vh;
+    background: #121417da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: monospace;
+}
+
+.lamp {
+    position: relative;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+
+.top {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    background:#000000;
+    border-radius: 60px 60px 10px 20px;
+  
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.torre{
+    width: 10px;
+    height: 80px;
+    background: #ffffff;
+    margin: auto;
+}
+
+.base{
+     width: 80px;
+    height: 10px;
+    background: #ffffff;
+    margin: auto;
+}
+
+.cord {
+    position: absolute;
+    top: 30px;
+    left: 80%;
+    transform: translate(-50%, 0px); /* 🔥 essencial pro JS */
+    width: 2px;
+    height: 70px;
+    background: #ffffff;
+    cursor: grab;
+    transition: transform 0.2s ease; 
+    z-index: 0;
+}
+
+
+.pull {
+    width: 12px;
+    height: 12px;
+    background: rgb(117, 10, 10);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -6px;
+    left: -5px;
+}
+
+.lamp.on .top {
+  background: #ffd54a;
+  box-shadow: 0 0 60px #ffd54a;
+}
+
+
+.lamp.on {
+  filter: drop-shadow(0 0 40px #ffd54a);
+}
+
+.input{
+    display: flex;
+    height: 30px;
+    width: 200px;
+}
