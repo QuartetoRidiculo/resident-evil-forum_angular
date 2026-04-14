@@ -1,18 +1,22 @@
-<div class="text">
-  <span>Arte & Screenshots</span>
-  <h1>Galeria</h1>
-  <p>Artes conceituais, screenshots e imagens inspiradas no universo de Resident Evil.</p>
-</div>
+<app-header></app-header>
 
-<div class="fotos"> 
-    @for (foto of images; track foto.text){
-
-        <div class="card">
-      <img [src]="foto.imgUrl" alt="{{foto.text}}" />
-      <div class="card-text">
-        <span>{{ foto.tipo }}</span>
-        <p>{{ foto.text }}</p>
+<div class="bg">
+  <div class="text">
+    <span>Arte & Screenshots</span>
+    <h1>Galeria</h1>
+    <p>Artes conceituais, screenshots e imagens inspiradas no universo de Resident Evil.</p>
+  </div>
+  
+  <div class="fotos">
+      @for (foto of images; track foto.text){
+  
+          <div class="card">
+        <img [src]="foto.imgUrl" alt="{{foto.text}}" />
+        <div class="card-text">
+          <span>{{ foto.tipo }}</span>
+          <p>{{ foto.text }}</p>
+        </div>
       </div>
-    </div>
-    }
+      }
+  </div>
 </div>

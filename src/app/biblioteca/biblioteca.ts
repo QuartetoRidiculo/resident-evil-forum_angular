@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Header } from "../components/header/header";
 
 interface Jogos {
   nome: string;
@@ -10,7 +11,7 @@ interface Jogos {
 
 @Component({
   selector: 'app-biblioteca',
-  imports: [],
+  imports: [Header],
   templateUrl: './biblioteca.html',
   styleUrl: './biblioteca.css',
 })

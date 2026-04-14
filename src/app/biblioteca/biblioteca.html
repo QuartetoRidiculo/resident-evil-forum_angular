@@ -1,25 +1,29 @@
-<div class="text">
-  <span>Biblioteca de jogos</span>
-  <h1>Biblioteca</h1>
-  <p>Principais títulos da franquia Resident Evil.</p>
-</div>
+<app-header></app-header>
 
-<div class="cards-container">
-  @for (jogo of jogos; track jogo.nome) {
-    <div class="card">
-      <img [src]="jogo.imgUrl" alt="{{ jogo.nome  }}" />
-      <div class="card-text">
-        <div class="card-header">
-          <div>
-            <h2>{{ jogo.nome }}</h2>
-            <p>Ano de lançamento: {{ jogo.ano }}</p>
+<div class="bg">
+  <div class="text">
+    <span>Biblioteca de jogos</span>
+    <h1>Biblioteca</h1>
+    <p>Principais títulos da franquia Resident Evil.</p>
+  </div>
+  
+  <div class="cards-container">
+    @for (jogo of jogos; track jogo.nome) {
+      <div class="card">
+        <img [src]="jogo.imgUrl" alt="{{ jogo.nome  }}" />
+        <div class="card-text">
+          <div class="card-header">
+            <div>
+              <h2>{{ jogo.nome }}</h2>
+              <p>Ano de lançamento: {{ jogo.ano }}</p>
+            </div>
+            <span [style.background-color]="jogo.nota >= 80 ? 'green' : '#D4A017'">
+              {{ jogo.nota }}
+            </span>
           </div>
-          <span [style.background-color]="jogo.nota >= 80 ? 'green' : '#D4A017'">
-            {{ jogo.nota }}
-          </span>
+          <p class="sinopse">{{ jogo.sinopse }}</p>
         </div>
-        <p class="sinopse">{{ jogo.sinopse }}</p>
       </div>
-    </div>
-  }
+    }
+  </div>
 </div>
