@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Header } from "../components/header/header";
 
 @Component({
   selector: 'app-galeria',
-  imports: [],
+  imports: [Header],
   templateUrl: './galeria.html',
   styleUrl: './galeria.css',
 })

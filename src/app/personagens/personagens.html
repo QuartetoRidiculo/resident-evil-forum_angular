@@ -1,17 +1,21 @@
-<div class="text">
-  <span>Biblioteca de jogos</span>
-  <h1>Biblioteca</h1>
-  <p>Principais títulos da franquia Resident Evil.</p>
-</div>
-<div class="cards-container">
-  @for (personagem of personagens; track personagem.nome) {
-    <div class="card">
-      <img [src]="personagem.imgUrl" alt="{{ personagem.nome }}" />
-      <div class="card-text">
-        <h2>{{ personagem.nome }}</h2>
-        <span>{{ personagem.cargo }}</span>
-        <p>{{ personagem.sobre }}</p>
+<app-header> </app-header>
+
+<div class="bg">
+  <div class="text">
+    <span>Biblioteca de jogos</span>
+    <h1>Biblioteca</h1>
+    <p>Principais títulos da franquia Resident Evil.</p>
+  </div>
+  <div class="cards-container">
+    @for (personagem of personagens; track personagem.nome) {
+      <div class="card">
+        <img [src]="personagem.imgUrl" alt="{{ personagem.nome }}" />
+        <div class="card-text">
+          <h2>{{ personagem.nome }}</h2>
+          <span>{{ personagem.cargo }}</span>
+          <p>{{ personagem.sobre }}</p>
+        </div>
       </div>
-    </div>
-  }
+    }
+  </div>
 </div>

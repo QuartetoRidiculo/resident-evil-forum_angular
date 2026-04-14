@@ -31,3 +31,20 @@ ul li a:hover {
 img {
   width: 150px;
 }
+
+.dnick{
+  display: flex;
+  align-items: center;
+
+}
+
+.imgnick{
+  display: flex;
+  height: 30px;
+  width: 30px;
+  padding-right: 20px;
+}
+
+.nick{
+   color: white;
+}

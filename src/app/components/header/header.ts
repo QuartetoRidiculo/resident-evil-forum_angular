@@ -9,9 +9,10 @@ import { RouterModule } from '@angular/router';
 })
 export class Header {
   links = [
-    { name: 'Home', href: '' },
+    { name: 'Home', href: '/home' },
     { name: 'Biblioteca', href: '/biblioteca' },
     { name: 'Personagens', href: '/personagens' },
     { name: 'Galeria', href: '/galeria' },
   ];
+   nome=localStorage.getItem("nome");
 }

@@ -1,29 +1,32 @@
-
-<div class="divSaga">
-  <p class="saga">A saga definitiva do survival horror</p>
-</div>
-
-<div class="h">
-  <h1 class="h1">RESIDENT</h1>
-  <h1 class="h11">EVIL</h1>
-</div>
-
-<p class="txt">Explore a franquia que definiu o gênero survival horror. De mansões assombradas a cidades infestadas,
-  mergulhe no universo de Resident Evil e descubra cada capítulo desta saga aterrorizante.</p>
-
-<div class="buttonDiv">
-  <a class="button" routerLink="/biblioteca">Explorar Biblioteca</a>
-  <a class="button" routerLink="/personagens">Ver Persongens</a>
-</div>
-
-<span class="Destaques">Destaques</span>
-<h2 class="iconicos">Jogos Icônicos</h2>
-
-<div class="container">
-  <div class="card" *ngFor="let jogo of imagens">
-    <img [src]="jogo.imgURL" alt="{{ jogo.titulo }}" width="200">
-
-    <h2 class="cardtxt">{{ jogo.titulo }}</h2>
-    <p class="cardtxt">{{ jogo.descricao }}</p>
+<app-header></app-header>
+<div class="bg">
+  
+  <div class="divSaga">
+    <p class="saga">A saga definitiva do survival horror</p>
+  </div>
+  
+  <div class="h">
+    <h1 class="h1">RESIDENT</h1>
+    <h1 class="h11">EVIL</h1>
+  </div>
+  
+  <p class="txt">Explore a franquia que definiu o gênero survival horror. De mansões assombradas a cidades infestadas,
+    mergulhe no universo de Resident Evil e descubra cada capítulo desta saga aterrorizante.</p>
+  
+  <div class="buttonDiv">
+    <a class="button" routerLink="/biblioteca">Explorar Biblioteca</a>
+    <a class="button" routerLink="/personagens">Ver Persongens</a>
+  </div>
+  
+  <span class="Destaques">Destaques</span>
+  <h2 class="iconicos">Jogos Icônicos</h2>
+  
+  <div class="container">
+    <div class="card" *ngFor="let jogo of imagens">
+      <img [src]="jogo.imgURL" alt="{{ jogo.titulo }}" width="200">
+  
+      <h2 class="cardtxt">{{ jogo.titulo }}</h2>
+      <p class="cardtxt">{{ jogo.descricao }}</p>
+    </div>
   </div>
 </div>
